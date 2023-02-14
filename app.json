@@ -22,12 +22,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icone_imc.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.gabriel120583.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3b34019d-efbe-4517-a255-1e699ce40fe4"
+      }
     }
   }
 }
