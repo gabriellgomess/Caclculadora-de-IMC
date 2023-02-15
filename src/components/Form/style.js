@@ -4,12 +4,13 @@ const styles = StyleSheet.create({
     formContext: {
         width: '100%',
         height: '100%',
-        bottom: 0,
         backgroundColor: '#f8ad2a',
         alignItems: 'center',
         marginTop: 30,
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
+        justifyContent: 'flex-start',
+        paddingTop: 30,
     },
     form:{
         width: '100%',
@@ -44,6 +45,12 @@ const styles = StyleSheet.create({
     textButtonCalculator:{
         fontSize: 20,
         color: '#fff',
+    },
+    errorMessage:{  
+        color: '#ff0000',
+        fontSize: 12,
+        fontWeight: 'bold',
+        paddingLeft: 20,
     }
    
 });
