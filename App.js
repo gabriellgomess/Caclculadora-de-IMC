@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text  } from 'react-native';
 import Home from './src/components/Home';
+import { StatusBar } from 'react-native';
 
 
 
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
   boxName: {
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 10,
+    padding: 0,
   },
   inputName: {
     backgroundColor: '#2a2a2a',
@@ -55,6 +56,7 @@ export default function App() {
   }
   return (
     <View style={styles.container}>
+      <StatusBar backgroundColor="#702bd4" barStyle="light-content" />
       {open == false?
       <View style={styles.boxName}>        
       <TextInput placeholderTextColor= '#d3d3d3' placeholder='Digite seu nome...' onChangeText={handleName} valeu={name} style={styles.inputName} />

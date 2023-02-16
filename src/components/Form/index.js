@@ -32,6 +32,8 @@ export default function Form() {
       verificationIMC();
       setMessageImc("Preencha o peso e a altura");
       setTextButton("Calcular IMC");
+      Vibration.vibrate(1000);
+      setErrorMessage("Campo obrigatório*");
     }
   };
   const calculateImc = () => {
